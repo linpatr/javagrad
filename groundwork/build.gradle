@@ -8,7 +8,9 @@ subprojects {
 
     plugins.withType(JavaPlugin).configureEach {
         java {
-            toolchain.languageVersion = JavaLanguageVersion.of(21)
+            // Gradle itself must run on JDK 21 (required by Minecraft 1.21 and Loom).
+            sourceCompatibility = JavaVersion.VERSION_21
+            targetCompatibility = JavaVersion.VERSION_21
             withSourcesJar()
         }
 
