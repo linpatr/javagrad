@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+    plugins {
+        id 'fabric-loom' version "${loom_version}"
+    }
+}
+
+rootProject.name = 'groundwork'
+
+// Platform-independent construction framework. Plain Java, no Minecraft dependency.
+include 'core'
+
+// The Fabric mod. Requires access to maven.fabricmc.net and Mojang's servers, so it can be
+// skipped (-Pgroundwork.coreOnly=true) in environments that only reach Maven Central.
+if (!providers.gradleProperty('groundwork.coreOnly').map { it.toBoolean() }.getOrElse(false)) {
+    include 'fabric'
+}

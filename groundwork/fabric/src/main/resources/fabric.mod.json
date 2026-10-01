@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "groundwork",
+  "version": "${version}",
+  "name": "Groundwork",
+  "description": "Sign on with Halcyon Frontier Industries and construct complete buildings from the materials you bring.",
+  "authors": ["linpatr"],
+  "contact": {
+    "sources": "https://github.com/linpatr/javagrad"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": ["io.github.linpatr.groundwork.Groundwork"]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "category": "structure",
+  "cost": {
+    "minecraft:stone_bricks": 16
+  },
+  "structure": {
+    "key": {
+      "#": "minecraft:stone_bricks"
+    },
+    "layers": [
+      ["####"],
+      ["####"],
+      ["####"],
+      ["####"]
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+}
+
+base {
+    archivesName = "${rootProject.mod_id}-core"
+}
+
+dependencies {
+    // Provided by Minecraft at runtime; the core never bundles it.
+    compileOnly "com.google.code.gson:gson:${rootProject.gson_version}"
+
+    testImplementation "com.google.code.gson:gson:${rootProject.gson_version}"
+    testImplementation platform("org.junit:junit-bom:${rootProject.junit_version}")
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ['-Xlint:all', '-Werror']
+}
+
+tasks.named('test') {
+    // The shipped building definitions live in the Fabric module's data pack; the core test
+    // suite validates them so broken content fails the build before it reaches the game.
+    def modResources = rootProject.file('fabric/src/main/resources')
+    systemProperty 'groundwork.modResources', modResources.absolutePath
+    inputs.dir(modResources).withPropertyName('modResources')
+}

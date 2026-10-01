@@ -1,0 +1,28 @@
+subprojects {
+    group = rootProject.maven_group
+    version = rootProject.mod_version
+
+    repositories {
+        mavenCentral()
+    }
+
+    plugins.withType(JavaPlugin).configureEach {
+        java {
+            toolchain.languageVersion = JavaLanguageVersion.of(21)
+            withSourcesJar()
+        }
+
+        tasks.withType(JavaCompile).configureEach {
+            options.encoding = 'UTF-8'
+            options.release = 21
+        }
+
+        tasks.withType(Test).configureEach {
+            useJUnitPlatform()
+            testLogging {
+                events 'failed'
+                exceptionFormat 'full'
+            }
+        }
+    }
+}

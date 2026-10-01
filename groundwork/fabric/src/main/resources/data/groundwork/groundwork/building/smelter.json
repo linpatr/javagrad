@@ -1,0 +1,22 @@
+{
+  "category": "production",
+  "cost": {
+    "minecraft:stone_bricks": 10,
+    "minecraft:cobblestone": 9,
+    "minecraft:iron_ingot": 5,
+    "minecraft:chest": 1
+  },
+  "structure": {
+    "key": {
+      "#": "minecraft:stone_bricks",
+      "F": "minecraft:furnace[facing=south]",
+      "H": "minecraft:hopper[facing=down]",
+      "W": "minecraft:cobblestone_wall"
+    },
+    "layers": [
+      ["#F#", "###"],
+      ["#H#", "###"],
+      ["   ", " W "]
+    ]
+  }
+}

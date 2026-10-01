@@ -1,0 +1,14 @@
+{
+  "category": "structure",
+  "cost": {
+    "minecraft:smooth_stone": 16
+  },
+  "structure": {
+    "key": {
+      "#": "minecraft:smooth_stone"
+    },
+    "layers": [
+      ["####", "####", "####", "####"]
+    ]
+  }
+}

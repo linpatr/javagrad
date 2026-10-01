@@ -1,0 +1,65 @@
+{
+  "groundwork.company": "Halcyon Frontier Industries",
+
+  "building.groundwork.foundation": "Foundation",
+  "building.groundwork.foundation.desc": "A level 4×4 platform of smooth stone to build on.",
+  "building.groundwork.wall": "Wall",
+  "building.groundwork.wall.desc": "A 4×4 stone brick wall section.",
+  "building.groundwork.storage_depot": "Storage Depot",
+  "building.groundwork.storage_depot.desc": "Six barrels in a sheltered rack, facing you for easy access.",
+  "building.groundwork.smelter": "Smelter",
+  "building.groundwork.smelter.desc": "A furnace with a hopper feeding its input from above.",
+
+  "category.groundwork.structure": "Structure",
+  "category.groundwork.logistics": "Logistics",
+  "category.groundwork.production": "Production",
+  "category.groundwork.general": "General",
+
+  "commands.groundwork.help.header": "%s — Construction Terminal",
+  "commands.groundwork.help.onboard": "/gw onboard — sign your employment contract",
+  "commands.groundwork.help.status": "/gw status — view your employee record",
+  "commands.groundwork.help.catalog": "/gw catalog — list approved buildings",
+  "commands.groundwork.help.info": "/gw info <building> — costs and dimensions",
+  "commands.groundwork.help.preview": "/gw preview <building> [pos] [facing] — outline a building site",
+  "commands.groundwork.help.build": "/gw build <building> [pos] [facing] — construct a building",
+
+  "commands.groundwork.onboard.already": "You are already on file as Employee #%s.",
+  "commands.groundwork.onboard.header": "— INTERNAL MEMO · %s —",
+  "commands.groundwork.onboard.line1": "Welcome aboard, Employee #%s. Your contract has been processed.",
+  "commands.groundwork.onboard.line2": "Your assignment: develop this site into a productive industrial operation.",
+  "commands.groundwork.onboard.line3": "Supply the materials and the company will handle the paperwork. Start with /gw catalog.",
+  "commands.groundwork.onboard.line4": "Thank you for your continued compliance.",
+
+  "commands.groundwork.not_employed": "You are not on the payroll. Sign your contract with /gw onboard.",
+  "commands.groundwork.status": "Employee #%s · Clearance %s · Buildings completed: %s · Hired %s",
+
+  "commands.groundwork.catalog.header": "Approved buildings (%s):",
+  "commands.groundwork.catalog.empty": "No buildings are approved for construction.",
+  "commands.groundwork.catalog.entry": " • %s — %s",
+  "commands.groundwork.catalog.hover": "%s\nClick to build.",
+  "commands.groundwork.catalog.locked": "requires clearance %s",
+
+  "commands.groundwork.info.header": "%s (%s)",
+  "commands.groundwork.info.details": "Footprint %s × %s × %s (W × H × D) · Category: %s · Clearance: %s",
+  "commands.groundwork.info.cost": "Cost:",
+  "commands.groundwork.info.cost_line": "  %s / %s %s",
+
+  "commands.groundwork.cost.entry": "%s× %s",
+
+  "commands.groundwork.build.success": "Construction complete: %s. Buildings completed: %s.",
+  "commands.groundwork.preview.ready": "Site approved for %s. Outline shown for 10 seconds.",
+
+  "commands.groundwork.result.clearance": "Requires clearance %s; your clearance is %s.",
+  "commands.groundwork.result.blocked": "Construction site blocked at %s position(s), first at %s (%s).",
+  "commands.groundwork.result.condition.obstructed": "obstructed",
+  "commands.groundwork.result.condition.out_of_bounds": "outside the world",
+  "commands.groundwork.result.condition.unloaded": "not loaded",
+  "commands.groundwork.result.missing": "Insufficient materials. Still needed: %s",
+
+  "commands.groundwork.error.unknown_building": "Unknown building: %s",
+  "commands.groundwork.error.facing": "Invalid facing '%s'. Use north, east, south or west.",
+  "commands.groundwork.error.no_target": "Look at a block within %s blocks, or give a position.",
+
+  "commands.groundwork.admin.clearance": "Set clearance of %s to %s.",
+  "commands.groundwork.admin.not_employed": "%s is not an employee."
+}

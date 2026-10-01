@@ -1,0 +1,19 @@
+{
+  "category": "logistics",
+  "cost": {
+    "minecraft:oak_planks": 42,
+    "minecraft:oak_slab": 15
+  },
+  "structure": {
+    "key": {
+      "B": "minecraft:barrel[facing=south]",
+      "P": "minecraft:oak_planks",
+      "S": "minecraft:oak_slab[type=bottom]"
+    },
+    "layers": [
+      ["BBB", "PPP"],
+      ["BBB", "PPP"],
+      ["SSS", "SSS"]
+    ]
+  }
+}
